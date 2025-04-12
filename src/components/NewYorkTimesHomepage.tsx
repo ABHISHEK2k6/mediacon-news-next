@@ -33,7 +33,7 @@ export default function NewYorkTimesHomepage() {
                 onClick={() => router.push(`/content/${news.id}`)}
                 className={styles.cardLarge}
               >
-                <Image
+                <img
                   src={news.image}
                   alt={news.alternate}
                   className={styles.imageLarge}
@@ -60,13 +60,13 @@ export default function NewYorkTimesHomepage() {
             <div key={index}>
               <div onClick={() => router.push(`/content/${news.id}`)} className={styles.newsgrid}>
                 <div>
-                  <Image className={styles.image} src={news.image} alt={news.title} />
+                  <img className={styles.image} src={news.image} alt={news.title} />
                 </div>
                 <div className={styles.dropnewscontent}>
                   <h4 className={styles.cardTitle}>{news.title}</h4>
                   <div className={styles.description}>
                     <div>
-                      <Image src={news.image} alt={news.author} />
+                      <img src={news.image} alt={news.author} />
                     </div>
                     <div className={styles.date}>
                       <p>{news.author} &#x2022; {news.date}</p>

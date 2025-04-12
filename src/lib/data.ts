@@ -6,7 +6,7 @@ export const middleEastNews = [
         title: "Massive Fire Breaks Out in Downtown Market",
         author: "John Carter",
         date: "Apr 10, 2025",
-        image: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6",
+        image: "/assets/cat.jpeg",
         content: `
         A massive fire broke out in the downtown market area around 3 AM today, causing significant damage to several businesses. 
         Firefighters battled the blaze for over six hours before bringing it under control. Authorities believe the fire may have started 
@@ -21,7 +21,7 @@ export const middleEastNews = [
         title: "Scientists Discover New Exoplanet With Possible Life",
         author: "Dr. Alicia Green",
         date: "Apr 09, 2025",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158",
+        image: "/assets/robot.jpeg",
         content: `
         Astronomers at the European Space Observatory have identified a new exoplanet in the Goldilocks zone of a distant star system.
         The planet, named XZ-402b, has a rocky surface, signs of water vapor, and an atmosphere capable of supporting life.
@@ -35,7 +35,7 @@ export const middleEastNews = [
         title: "India and China Agree to New Trade Framework",
         author: "Nisha Patel",
         date: "Apr 08, 2025",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEukP3VL2AzZXw6VPLWyBoFlTsijrNr7HK7w&s",
+        image: "/assets/india-china.jpeg",
         content: `
         After months of diplomatic meetings, India and China have agreed to a new framework aimed at easing trade restrictions between the two countries.
         The agreement includes tariff reductions, improved customs processes, and bilateral cooperation in digital technology and green energy.
@@ -49,7 +49,7 @@ export const middleEastNews = [
         title: "Breakthrough in Cancer Treatment Announced",
         author: "Sophia Adams",
         date: "Apr 07, 2025",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjP39XcyENrUO-d_FvT1UNhc4L0bIKmfV6lw&s",
+        image: "/assets/cancer.jpeg",
         content: `
         A groundbreaking cancer treatment using modified immune cells has shown remarkable results in early trials, offering hope to thousands of patients.
         The therapy, known as CAR-T Cell Therapy, works by genetically reprogramming a patient’s own immune cells to attack cancer cells.
@@ -63,7 +63,7 @@ export const middleEastNews = [
         title: "AI Revolutionizes Local Farming Practices",
         author: "Liam Chen",
         date: "Apr 06, 2025",
-        image: "https://images.unsplash.com/photo-1506354666786-959d6d497f1a",
+        image: "/assets/pizza.jpeg",
         content: `
         Farmers in rural parts of Southeast Asia are adopting AI-powered tools to monitor soil health, predict crop yields, and detect pests.
         These tools, developed by local startups in collaboration with agri-tech giants, have already increased efficiency by 35% in pilot regions.
@@ -75,7 +75,7 @@ export const middleEastNews = [
 export const usPolitics = [
     {
         id:"us-1",
-        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGtAGz-H036LEh-W9Tli4cC4NCIGmKLAvFg&s",
+        image:"/assets/trump.jpeg",
         alternate:"Man at White House",
         date: "Apr 06, 2025",
         title:"White House Tried to 'Lock Down' Ukraine Call Records",
@@ -91,7 +91,7 @@ export const usPolitics = [
     },
     {
         id:"us-2",
-        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1EJOxo3MFnpjnWD1FB9ba7oHBPh1RZNEO6Q&s",
+        image:"/assets/assembly.jpeg",
         alternate:"US Politics news",
         date: "Apr 06, 2025",
         title:"Senate Votes on Key Legislation Ahead of Recess",
@@ -104,7 +104,7 @@ export const usPolitics = [
     },
     {
         id:"us-3",
-        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxBfcE9JXolswWVJV7qR4WWKKjz-MGafQvtg&s",
+        image:"/assets/billgates.jpeg",
         alternate:"US Politics news",
         date: "Apr 06, 2025",
         title:"New Bill Aims to Address Climate Change Concerns",
