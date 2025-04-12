@@ -16,14 +16,13 @@ export default function NewYorkTimesHomepage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <h1 className={styles.logo}>Mediacon News</h1>
+          <h1 className={styles.logo}>Mediacon Times</h1>
         </div>
       </header>
 
       <section className={styles.section}>
         <div className={styles.sectionHeader}>
-          <h2>US Politics</h2>
-          <button className={styles.showAll}>Show all</button>
+          <h2>Breaking News</h2>
         </div>
         <div className={styles.scrollWrapper}>
           <div ref={usPoliticsRef} className={styles.scrollContainer}>
@@ -53,8 +52,7 @@ export default function NewYorkTimesHomepage() {
 
       <section className={styles.section}>
         <div className={styles.sectionHeader2}>
-          <h2>Middle East</h2>
-          <button className={styles.showAll2}>Show all</button>
+          <h2>Latest News</h2>
         </div>
 
         <div className={styles.dropnews}>
@@ -65,7 +63,7 @@ export default function NewYorkTimesHomepage() {
                   <Image className={styles.image} src={news.image} alt={news.title} width={500} height={500} loading="lazy"/>
                 </div>
                 <div className={styles.dropnewscontent}>
-                  <h4 className={styles.cardTitle}>{news.title}</h4>
+                  <h4 id={styles.cardTitleSmall}>{news.title}</h4>
                   <div className={styles.description}>
                     <div>
                       <Image src={news.image} alt={news.author} width={500} height={500} loading="lazy"/>
