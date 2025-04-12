@@ -25,7 +25,7 @@ export default function Content() {
     <div className={styles.container}>
       <div className={styles.container2}>
         <div>
-          <button onClick={() => router.push('../')} className={styles.button}>&#8249;</button>
+          <button onClick={() => router.back()} className={styles.button}>&#8249;</button>
           <div>
             <Image
               src={content.image}
