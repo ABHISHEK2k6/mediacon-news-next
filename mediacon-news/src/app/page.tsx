@@ -5,8 +5,8 @@ import Content from "../components/ContentPage"
 export default function Home() {
   return (
     <div className="App">
-      <NewYorkTimesHomepage />
-      <Footer />
+      {/*<NewYorkTimesHomepage />
+      <Footer />*/}
       <Content />
     </div>
   )
