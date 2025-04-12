@@ -4,6 +4,7 @@ import { useParams } from "next/navigation"
 import { middleEastNews } from "@/src/lib/data"
 import { usPolitics } from "@/src/lib/data"
 import { useRouter } from 'next/navigation';
+import Image from "next/image"
 
 export default function Content() {
 
@@ -26,10 +27,11 @@ export default function Content() {
         <div>
           <button onClick={() => router.push('../')} className={styles.button}>&#8249;</button>
           <div>
-            <img
+            <Image
               src={content.image}
               alt={content.title}
               className={styles.thumbnail}
+              width={500} height={500}
             />
           </div>
           <div className={styles.desc}>
@@ -39,8 +41,8 @@ export default function Content() {
         </div>
         <div className={styles.content}>
           <div>
-            <img id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" />
-            <div><img className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" /></div>
+            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" width={500} height={500} />
+            <div><Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" width={500} height={500}/></div>
           </div>
           <h2>{content.content}</h2>
         </div>

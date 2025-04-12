@@ -4,6 +4,7 @@ import React, { useRef } from "react"
 import { useRouter } from 'next/navigation';
 import styles from "../styles/NewYorkTimesHomepage.module.css"
 import { usPolitics } from "../lib/data";
+import Image from "next/image";
 
 export default function NewYorkTimesHomepage() {
 
@@ -32,10 +33,11 @@ export default function NewYorkTimesHomepage() {
                 onClick={() => router.push(`/content/${news.id}`)}
                 className={styles.cardLarge}
               >
-                <img
+                <Image
                   src={news.image}
                   alt={news.alternate}
                   className={styles.imageLarge}
+                  width={500} height={500}
                 />
                 <div className={styles.details}>
                   <h3 className={styles.cardTitle}>{news.title}</h3>
@@ -59,13 +61,13 @@ export default function NewYorkTimesHomepage() {
             <div key={index}>
               <div onClick={() => router.push(`/content/${news.id}`)} className={styles.newsgrid}>
                 <div>
-                  <img className={styles.image} src={news.image} alt={news.title} />
+                  <Image className={styles.image} src={news.image} alt={news.title} width={500} height={500}/>
                 </div>
                 <div className={styles.dropnewscontent}>
                   <h4 className={styles.cardTitle}>{news.title}</h4>
                   <div className={styles.description}>
                     <div>
-                      <img src={news.image} alt={news.author} />
+                      <Image src={news.image} alt={news.author} width={500} height={500}/>
                     </div>
                     <div className={styles.date}>
                       <p>{news.author} &#x2022; {news.date}</p>
