@@ -4,7 +4,6 @@ import React, { useRef } from "react"
 import { useRouter } from 'next/navigation';
 import styles from "../styles/NewYorkTimesHomepage.module.css"
 import { usPolitics } from "../lib/data";
-import Image from "next/image";
 
 export default function NewYorkTimesHomepage() {
 
