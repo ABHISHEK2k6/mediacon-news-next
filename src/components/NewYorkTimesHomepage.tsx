@@ -34,6 +34,7 @@ export default function NewYorkTimesHomepage() {
                 className={styles.cardLarge}
               >
                 <Image
+                  loading="lazy"
                   src={news.image}
                   alt={news.alternate}
                   className={styles.imageLarge}
@@ -61,13 +62,13 @@ export default function NewYorkTimesHomepage() {
             <div key={index}>
               <div onClick={() => router.push(`/content/${news.id}`)} className={styles.newsgrid}>
                 <div>
-                  <Image className={styles.image} src={news.image} alt={news.title} width={500} height={500}/>
+                  <Image className={styles.image} src={news.image} alt={news.title} width={500} height={500} loading="lazy"/>
                 </div>
                 <div className={styles.dropnewscontent}>
                   <h4 className={styles.cardTitle}>{news.title}</h4>
                   <div className={styles.description}>
                     <div>
-                      <Image src={news.image} alt={news.author} width={500} height={500}/>
+                      <Image src={news.image} alt={news.author} width={500} height={500} loading="lazy"/>
                     </div>
                     <div className={styles.date}>
                       <p>{news.author} &#x2022; {news.date}</p>

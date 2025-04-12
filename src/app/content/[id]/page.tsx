@@ -32,6 +32,7 @@ export default function Content() {
               alt={content.title}
               className={styles.thumbnail}
               width={500} height={500}
+              loading="lazy"
             />
           </div>
           <div className={styles.desc}>
@@ -41,8 +42,8 @@ export default function Content() {
         </div>
         <div className={styles.content}>
           <div>
-            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" width={500} height={500} />
-            <div><Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" width={500} height={500}/></div>
+            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" width={500} height={500} loading="lazy"/>
+            <div><Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" width={500} height={500} loading="lazy"/></div>
           </div>
           <h2>{content.content}</h2>
         </div>
