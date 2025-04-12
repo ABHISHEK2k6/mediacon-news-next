@@ -11,24 +11,6 @@ export default function NewYorkTimesHomepage() {
 
   const usPoliticsRef = useRef<HTMLDivElement>(null)
 
-  const scrollSection = (
-    ref: React.RefObject<HTMLDivElement | null>,
-    direction: "left" | "right"
-  ) => {
-    if (ref.current) {
-      const scrollAmount = 300
-      const scrollPosition =
-        direction === "left"
-          ? ref.current.scrollLeft - scrollAmount
-          : ref.current.scrollLeft + scrollAmount
-
-      ref.current.scrollTo({
-        left: scrollPosition,
-        behavior: "smooth",
-      })
-    }
-  }
-
   return (
     <div className={styles.container}>
       <header className={styles.header}>
