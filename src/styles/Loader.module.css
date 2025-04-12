@@ -1,11 +1,12 @@
 .loaderContainer {
-    height: 100vh;
-    background: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
   .glowAnimation {
     animation: pulse 2s ease-in-out infinite;
     filter: drop-shadow(0 0 20px #ffcc00);
