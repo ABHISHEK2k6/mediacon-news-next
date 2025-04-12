@@ -1,21 +1,26 @@
-import type { Metadata } from "next"
-import "./globals.css"
+"use client"
 
-export const metadata: Metadata = {
-  title: "Mediacon News",
-  description: "News platform by Mediacon",
-}
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Loader from "../components/Loader";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const [loading, setLoading] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => setLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, [pathname]);
+
   return (
     <html lang="en">
-      <body>
-        <div id="root">{children}</div>
-      </body>
-    </html>
-  )
+  <body style={{ margin: 0, padding: 0 }}>
+    {loading && <Loader />}
+    {!loading && children}
+  </body>
+</html>
+
+  );
 }
