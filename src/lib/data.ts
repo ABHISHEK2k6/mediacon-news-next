@@ -14,6 +14,13 @@ export const middleEastNews = [
         
         Several eyewitnesses reported hearing a loud bang followed by thick smoke engulfing the street. Business owners are now 
         assessing the extent of their losses. The city mayor has promised compensation and quick restoration of the affected area.
+
+        A massive fire broke out in the downtown market area around 3 AM today, causing significant damage to several businesses. 
+        Firefighters battled the blaze for over six hours before bringing it under control. Authorities believe the fire may have started 
+        due to an electrical short circuit, but investigations are ongoing. No casualties have been reported so far.
+        
+        Several eyewitnesses reported hearing a loud bang followed by thick smoke engulfing the street. Business owners are now 
+        assessing the extent of their losses. The city mayor has promised compensation and quick restoration of the affected area.
       `
     },
     {

@@ -3,8 +3,11 @@ import styles from "@/src/styles/ContentPage.module.css"
 import { useParams } from "next/navigation"
 import { middleEastNews } from "@/src/lib/data"
 import { usPolitics } from "@/src/lib/data"
+import { useRouter } from 'next/navigation';
 
 export default function Content() {
+
+  const router = useRouter();
 
   const { id } = useParams();
   const article1 = middleEastNews.find(item => item.id === id);
@@ -21,6 +24,7 @@ export default function Content() {
     <div className={styles.container}>
       <div className={styles.container2}>
         <div>
+          <button onClick={() => router.push('../')} className={styles.button}>&#8249;</button>
           <div>
             <img
               src={content.image}
