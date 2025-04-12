@@ -2,7 +2,6 @@
   "name": "mediacon-news",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -10,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.10.5",
     "@tailwindcss/postcss": "^4.1.3",
     "next": "15.3.0",
     "postcss": "^8.5.3",
