@@ -3,6 +3,7 @@ import styles from "@/src/styles/ContentPage.module.css"
 import { useParams } from "next/navigation"
 import { middleEastNews } from "@/src/lib/data"
 import { usPolitics } from "@/src/lib/data"
+import Image from "next/image"
 
 export default function Content() {
 
@@ -22,7 +23,7 @@ export default function Content() {
       <div className={styles.container2}>
         <div>
           <div>
-            <img
+            <Image
               src={content.image}
               alt={content.title}
               className={styles.thumbnail}
@@ -35,8 +36,8 @@ export default function Content() {
         </div>
         <div className={styles.content}>
           <div>
-            <img id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" />
-            <div><img className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" /></div>
+            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" />
+            <div><Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" /></div>
           </div>
           <h2>{content.content}</h2>
         </div>
