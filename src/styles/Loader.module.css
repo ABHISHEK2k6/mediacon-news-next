@@ -16,11 +16,11 @@
 }
 
 .animatedStroke {
-  width: 48%;
-  height: 48%;
+  width: 50%;
+  height: 50%;
   position: absolute;
-  left: 6.3rem;
-  top: 15.5rem;
+  left: 6.2rem;
+  top: 15rem;
 }
 
 .strokePath {
