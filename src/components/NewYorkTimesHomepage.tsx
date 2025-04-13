@@ -14,7 +14,7 @@ export default function NewYorkTimesHomepage() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isUserInteracting, setIsUserInteracting] = useState(false);
   const interactionTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const cardWidth = 250;
+  const cardWidth = 280;
   const gap = 16;
   const cardSizeWithGap = cardWidth + gap;
 
