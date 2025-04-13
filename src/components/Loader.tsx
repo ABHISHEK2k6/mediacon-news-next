@@ -3,6 +3,7 @@ import styles from "../styles/Loader.module.css";
 import Image from "next/image";
 
 export default function LoadingScreen() {
+  
   return (
     <div className={styles.loaderContainer}>
       <div className={styles.logoWrapper}>

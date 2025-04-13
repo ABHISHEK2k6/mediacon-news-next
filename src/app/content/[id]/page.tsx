@@ -1,13 +1,12 @@
-"use client"
-import styles from "@/src/styles/ContentPage.module.css"
-import { useParams } from "next/navigation"
-import { middleEastNews } from "@/src/lib/data"
-import { usPolitics } from "@/src/lib/data"
+"use client";
+import styles from "@/src/styles/ContentPage.module.css";
+import { useParams } from "next/navigation";
+import { middleEastNews } from "@/src/lib/data";
+import { usPolitics } from "@/src/lib/data";
 import { useRouter } from 'next/navigation';
-import Image from "next/image"
+import Image from "next/image";
 
 export default function Content() {
-
   const router = useRouter();
 
   const { id } = useParams();
@@ -19,7 +18,6 @@ export default function Content() {
   if (!content) {
     return <p>Article not found.</p>;
   }
-
 
   return (
     <div className={styles.container}>
@@ -49,5 +47,5 @@ export default function Content() {
         </div>
       </div>
     </div>
-  )
+  );
 }

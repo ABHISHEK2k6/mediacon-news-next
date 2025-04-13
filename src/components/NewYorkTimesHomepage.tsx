@@ -139,15 +139,14 @@ export default function NewYorkTimesHomepage() {
               {usPolitics.map((_, index) => (
                 <span
                   key={index}
-                  className={`${styles.dot} ${currentIndex === index ? styles.activeDot : ""
-                    }`}
+                  className={`${styles.dot} ${currentIndex === index ? styles.activeDot : ""}`}
                 />
               ))}
             </div>
           </div>
         </div>
       </section>
-      
+
       <div className={styles.line}></div>
 
       <section className={styles.section}>
@@ -185,9 +184,7 @@ export default function NewYorkTimesHomepage() {
                       />
                     </div>
                     <div className={styles.date}>
-                      <p>
-                        {news.author} • {news.date}
-                      </p>
+                      <p>{news.author} • {news.date}</p>
                     </div>
                   </div>
                 </div>
