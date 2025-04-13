@@ -1,35 +1,44 @@
 .loaderContainer {
   position: fixed;
-  bottom: 0;
-  top: 0;
-  right: 0;
-  left: 0;
+  inset: 0;
   background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
 .logoWrapper {
-  width: 250px;
-  height: 250px;
+  position: relative;
+  width: 50vw;
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+}
+
+.logoInner {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.logoImage {
+  object-fit: contain;
 }
 
 .animatedStroke {
-  width: 55%;
-  height: 55%;
   position: absolute;
-  left: 5.5rem;
-  top: 14.1rem;
+  inset: 0;
+  z-index: 5;
+  transform: rotate(-90deg);
 }
 
 .strokePath {
   fill: none;
   stroke: #fed500;
-  stroke-width: 10;
-  stroke-dasharray: 1500;
-  stroke-dashoffset: 1500;
-  animation: drawStroke 3s ease forwards;
+  stroke-width: 6;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawStroke 2.5s ease-out forwards;
 }
 
 @keyframes drawStroke {
