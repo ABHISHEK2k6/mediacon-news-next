@@ -1,29 +1,39 @@
 .loaderContainer {
-  height: 100vh;
-  background: black;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.3s ease-in-out;
 }
 
-  .glowAnimation {
-    animation: pulse 2s ease-in-out infinite;
-    filter: drop-shadow(0 0 20px #ffcc00);
+.logoWrapper {
+  width: 250px;
+  height: 250px;
+}
+
+.animatedStroke {
+  width: 48%;
+  height: 48%;
+  position: absolute;
+  left: 6.3rem;
+  top: 15.5rem;
+}
+
+.strokePath {
+  fill: none;
+  stroke: white;
+  stroke-width: 5;
+  stroke-dasharray: 1500;
+  stroke-dashoffset: 1500;
+  animation: drawStroke 3s ease forwards;
+}
+
+@keyframes drawStroke {
+  to {
+    stroke-dashoffset: 0;
   }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-      filter: drop-shadow(0 0 5px #ffcc00);
-    }
-    50% {
-      transform: scale(1.1);
-      filter: drop-shadow(0 0 25px #ffd700);
-    }
-    100% {
-      transform: scale(1);
-      filter: drop-shadow(0 0 5px #ffcc00);
-    }
-  }
-  
+}
