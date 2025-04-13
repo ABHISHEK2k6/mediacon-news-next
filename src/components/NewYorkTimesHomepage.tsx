@@ -18,27 +18,31 @@ export default function NewYorkTimesHomepage() {
   const gap = 16;
   const cardSizeWithGap = cardWidth + gap;
 
-  // Setup auto-scroll (only once)
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (isUserInteracting || !scrollContainerRef.current) return;
+    const autoScroll = setInterval(() => {
+      if (!scrollContainerRef.current || isUserInteracting) return;
 
       const nextIndex = (currentIndex + 1) % usPolitics.length;
-      scrollContainerRef.current.scrollTo({
-        left: nextIndex * cardSizeWithGap,
-        behavior: "smooth",
-      });
-      setCurrentIndex(nextIndex);
-    }, 2000);
+      scrollToCard(nextIndex);
+    }, 3000);
 
-    return () => clearInterval(interval);
-  }, [isUserInteracting, currentIndex]);
+    return () => clearInterval(autoScroll);
+  }, [currentIndex, isUserInteracting]);
 
   useEffect(() => {
     return () => {
       if (interactionTimeoutRef.current) clearTimeout(interactionTimeoutRef.current);
     };
   }, []);
+
+  const pauseAutoScroll = () => {
+    setIsUserInteracting(true);
+    if (interactionTimeoutRef.current) clearTimeout(interactionTimeoutRef.current);
+
+    interactionTimeoutRef.current = setTimeout(() => {
+      setIsUserInteracting(false);
+    }, 3000);
+  };
 
   const handleScroll = () => {
     pauseAutoScroll();
@@ -49,27 +53,16 @@ export default function NewYorkTimesHomepage() {
     }
   };
 
-  const pauseAutoScroll = () => {
-    setIsUserInteracting(true);
-    if (interactionTimeoutRef.current) clearTimeout(interactionTimeoutRef.current);
-
-    // Resume auto-scroll after 3s of no interaction
-    interactionTimeoutRef.current = setTimeout(() => {
-      setIsUserInteracting(false);
-    }, 2000);
-  };
-
   const handlers = useSwipeable({
     onSwipedLeft: () => {
       pauseAutoScroll();
-      const nextIndex = (currentIndex + 1) % usPolitics.length;
-      scrollToCard(nextIndex);
+      scrollToCard((currentIndex + 1) % usPolitics.length);
     },
     onSwipedRight: () => {
       pauseAutoScroll();
-      const prevIndex = (currentIndex - 1 + usPolitics.length) % usPolitics.length;
-      scrollToCard(prevIndex);
+      scrollToCard((currentIndex - 1 + usPolitics.length) % usPolitics.length);
     },
+    trackMouse: true,
   });
 
   const scrollToCard = (index: number) => {
@@ -113,6 +106,7 @@ export default function NewYorkTimesHomepage() {
                   setIsUserInteracting(false);
                 }, 3000);
               }}
+              style={{ touchAction: "pan-y" }}
             >
               {usPolitics.map((news, index) => (
                 <motion.div
@@ -140,11 +134,14 @@ export default function NewYorkTimesHomepage() {
                 </motion.div>
               ))}
             </div>
+
             <div className={styles.dotsWrapper}>
               {usPolitics.map((_, index) => (
                 <span
                   key={index}
-                  className={`${styles.dot} ${currentIndex === index ? styles.activeDot : ""}`}
+                  className={`${styles.dot} ${
+                    currentIndex === index ? styles.activeDot : ""
+                  }`}
                 />
               ))}
             </div>
