@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .container {
   display: flex;
   flex-direction: column;
   max-width: 60rem;
   margin: auto;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.05);
+  ;
   font-family: serif;
 }
 
 .header {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #00000020;
   position: fixed;
   width: 100%;
   background-color: white;
@@ -23,16 +24,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.8rem;
+  font-weight: 1000;
   text-align: center;
   font-family: "Old Standard TT", serif;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  z-index: 10;
+  margin: .7rem;
 }
 
 .iconPlaceholder,
@@ -45,8 +49,10 @@
   margin-top: -.8rem;
 }
 
-.section1{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.914),gray);
+.line {
+  background-color: rgba(0, 0, 0, 0.125);
+  width: 100%;
+  height: .5px;
 }
 
 .sectionHeader {
@@ -62,12 +68,12 @@
 }
 
 .sectionHeader h2 {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.2rem;
   margin-top: 4rem;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 .sectionHeader,
@@ -75,7 +81,7 @@
   font-size: 1.2rem;
   margin-top: 20px;
   margin-left: .5rem;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: 'Inter', sans-serif;
 }
 
 .showAll {
@@ -140,7 +146,8 @@
   margin-left: 2rem;
   margin-right: .5rem;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
 }
 
 .cardSmall {
@@ -160,10 +167,10 @@
   margin-top: 0.5rem;
   color: white;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 #cardTitleSmall {
@@ -172,17 +179,17 @@
   margin: 0;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 .cardAuthor {
   font-size: medium;
   color: #ffffff;
   margin-top: 0.25rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 
@@ -230,7 +237,7 @@
   align-items: center;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 .image {
@@ -249,7 +256,7 @@
   bottom: 1px;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 
 }
 
@@ -260,23 +267,24 @@
 }
 
 .dropnewscontent {
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .dropnewscontent p {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 10px;
   color: rgb(102, 97, 97);
   position: relative;
   user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none; 
+  -ms-user-select: none;
 }
 
 .date {
   margin-left: .4rem;
   margin-bottom: 3px;
 }
+
 .dotsWrapper {
   display: flex;
   justify-content: center;
@@ -291,19 +299,19 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color,transform;
+  transition: background-color, transform;
 }
 
 .activeDot {
   background-color: #0070f3;
-  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   width: 1rem;
   border-radius: .5rem;
 }
 
 .activeCard {
   transform: scale(1.08);
-  transition: transform 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 2;
   margin-top: .5rem;
   margin-left: .5rem;

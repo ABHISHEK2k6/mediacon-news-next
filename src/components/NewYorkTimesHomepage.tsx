@@ -139,15 +139,16 @@ export default function NewYorkTimesHomepage() {
               {usPolitics.map((_, index) => (
                 <span
                   key={index}
-                  className={`${styles.dot} ${
-                    currentIndex === index ? styles.activeDot : ""
-                  }`}
+                  className={`${styles.dot} ${currentIndex === index ? styles.activeDot : ""
+                    }`}
                 />
               ))}
             </div>
           </div>
         </div>
       </section>
+      
+      <div className={styles.line}></div>
 
       <section className={styles.section}>
         <div className={styles.sectionHeader2}>
