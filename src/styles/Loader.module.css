@@ -16,16 +16,16 @@
 }
 
 .animatedStroke {
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
   position: absolute;
-  left: 6.2rem;
-  top: 15rem;
+  left: 5.5rem;
+  top: 14.3rem;
 }
 
 .strokePath {
   fill: none;
-  stroke: rgb(255, 251, 0);
+  stroke: #fed500;
   stroke-width: 10;
   stroke-dasharray: 1500;
   stroke-dashoffset: 1500;
