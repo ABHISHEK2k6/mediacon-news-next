@@ -16,7 +16,7 @@ export default function RootLayout({
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Adjust time as needed
+    }, 1200);
     return () => clearTimeout(timer);
   }, [pathname]);
 
