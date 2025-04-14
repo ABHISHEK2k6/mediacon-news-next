@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Loader from "../components/Loader";
 
@@ -12,11 +12,19 @@ export default function RootLayout({
   const [loading, setLoading] = useState(true);
   const pathname = usePathname();
 
+  // Preload image once on mount
+  useEffect(() => {
+    const img = new Image();
+    img.src = "/assets/Con(Logo).png";
+  }, []);
+
+  // Show loader on route change
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200);
+    }, 1200); // Or adjust to your animation duration
+
     return () => clearTimeout(timer);
   }, [pathname]);
 

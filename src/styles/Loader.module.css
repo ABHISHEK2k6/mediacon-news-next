@@ -38,8 +38,9 @@
   stroke-width: 6;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: drawStroke 2.5s ease-out forwards;
+  animation: drawStroke 2.65s ease-out infinite alternate;
 }
+
 
 @keyframes drawStroke {
   to {
