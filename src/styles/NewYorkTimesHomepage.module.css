@@ -233,6 +233,7 @@
   margin-left: .3rem;
   border-radius: 0.5rem;
   object-fit: cover;
+  filter: brightness(95%);
 }
 
 .description {
