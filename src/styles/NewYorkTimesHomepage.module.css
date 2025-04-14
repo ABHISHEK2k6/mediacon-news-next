@@ -90,27 +90,6 @@
   font-weight: 1000;
 }
 
-.showAll {
-  margin-top: 45px;
-  font-size: 0.875rem;
-  color: #052f61;
-  background: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: rgba(128, 128, 128, 0.085);
-}
-
-.showAll2 {
-  font-size: 0.875rem;
-  color: #052f61;
-  background: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  background-color: rgba(128, 128, 128, 0.085);
-}
-
 .scrollWrapper {
   position: relative;
 }
@@ -154,6 +133,7 @@
   object-fit: cover;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.37);
+  filter: brightness(70%);
 }
 
 .cardSmall {
@@ -190,7 +170,7 @@
 }
 
 .cardAuthor {
-  font-size: 1rem;
+  font-size: .8rem;
   color: #ffffff;
   margin-top: 0.25rem;
   font-family: "Lato", sans-serif;
@@ -260,7 +240,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  bottom: 1px;
+  bottom: 4px;
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;

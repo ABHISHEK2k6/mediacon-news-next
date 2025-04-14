@@ -17,7 +17,7 @@
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 1px 140px rgb(0, 0, 0);
 }
 .image{
   display: flex;
@@ -59,21 +59,45 @@
   color: white;
   font-size: .8rem;
 }
-.button{
+/* Add to your existing CSS file */
+.container {
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+.button {
+  /* Your existing styles */
+  position: fixed;
+  top: 1.8rem;
+  left: 1.3rem;
+  z-index: 1000;
   padding-bottom: 8px;
   padding-right: 7px;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   background-color: rgba(93, 90, 90, 0.714);
-  top: 1.8rem;
-  left: 1.3rem;
   font-size: 40px;
   height: 40px;
   width: 40px;
   border: none;
   filter: opacity(90%);
   border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  
+  /* Add these new properties */
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: rgba(93, 90, 90, 0.9);
+}
+
+/* Remove focus outline for accessibility while keeping it keyboard-accessible */
+.button:focus {
+  outline: none;
 }

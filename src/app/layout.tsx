@@ -23,7 +23,7 @@ export default function RootLayout({
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1200); // Or adjust to your animation duration
+    }, 500); // Or adjust to your animation duration
 
     return () => clearTimeout(timer);
   }, [pathname]);
