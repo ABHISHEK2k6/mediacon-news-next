@@ -24,7 +24,7 @@ export default function NewYorkTimesHomepage() {
 
       const nextIndex = (currentIndex + 1) % usPolitics.length;
       scrollToCard(nextIndex);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(autoScroll);
   }, [currentIndex, isUserInteracting]);
