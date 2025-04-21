@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0, overflow: loading ? "hidden" : "auto" }}>
-        {children}
+        {loading ? <Loader /> : children}
       </body>
     </html>
   );
