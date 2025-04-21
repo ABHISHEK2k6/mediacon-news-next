@@ -213,6 +213,7 @@
 .dropnews {
   display: grid;
   row-gap: 15px;
+  margin-bottom: 10px;
 }
 
 .dropnewscontent h4 {

@@ -23,7 +23,7 @@ export default function RootLayout({
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // Or adjust to your animation duration
+    }, 1); // Or adjust to your animation duration
 
     return () => clearTimeout(timer);
   }, [pathname]);
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body style={{ margin: 0, padding: 0, overflow: loading ? "hidden" : "auto" }}>
-        {loading ? <Loader /> : children}
+        { children}
       </body>
     </html>
   );
