@@ -36,6 +36,7 @@
 
 .logo {
   font-size: 1.2rem;
+  font-weight: 1000;
   text-align: center;
   font-family: "Poller One", serif;
   font-weight: bold;
@@ -167,6 +168,7 @@
 
 #cardTitleSmall {
   font-size: 13.8px;
+  font-weight: 600;
   margin: 0;
   user-select: none;
   -webkit-user-select: none;
