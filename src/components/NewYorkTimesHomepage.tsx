@@ -79,7 +79,7 @@ export default function NewYorkTimesHomepage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <h1 className={styles.logo}>THE MEDIACON TIME</h1>
+          <h1 className={styles.logo}>THE MEDIACON TIMES</h1>
         </div>
       </header>
 
