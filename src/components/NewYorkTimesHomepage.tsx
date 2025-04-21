@@ -24,7 +24,7 @@ export default function NewYorkTimesHomepage() {
 
       const nextIndex = (currentIndex + 1) % usPolitics.length;
       scrollToCard(nextIndex);
-    }, 3000);
+    }, 2000);
 
     return () => clearInterval(autoScroll);
   }, [currentIndex, isUserInteracting]);
@@ -79,7 +79,7 @@ export default function NewYorkTimesHomepage() {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.headerContent}>
-          <h1 className={styles.logo}>MEDIACON TIME</h1>
+          <h1 className={styles.logo}>THE MEDIACON TIME</h1>
         </div>
       </header>
 

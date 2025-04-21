@@ -12,7 +12,6 @@ export default function Content() {
   const { id } = useParams();
   const article1 = middleEastNews.find(item => item.id === id);
   const article2 = usPolitics.find(item => item.id === id);
-
   const content = article1 || article2;
 
   if (!content) {
@@ -23,7 +22,7 @@ export default function Content() {
     <div className={styles.container}>
       <div className={styles.container2}>
         <div>
-          <button onClick={() => router.back()} className={styles.button}>&#8249;</button>
+          <button onClick={() => router.push('/')} className={styles.button}>&#8249;</button>
           <div>
             <Image
               src={content.image}
@@ -39,11 +38,18 @@ export default function Content() {
           </div>
         </div>
         <div className={styles.content}>
-          <div>
-            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" width={500} height={500} loading="lazy"/>
-            <div><Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" width={500} height={500} loading="lazy"/></div>
+          <div className={styles.remove}>
+            <Image id={styles.logo} src="/assets/Con(Logo).png" alt="MediaCon Logo" width={500} height={500} loading="lazy" />
+            <Image className={styles.name} src="/assets/Mediacon(Logo_OG1).png" alt="" width={500} height={500} loading="lazy" />
           </div>
-          <h2>{content.content}</h2>
+          <p>
+            {content.content.split('\n').map((line, index) => (
+              <span key={index}>
+                {line}
+                <br />
+              </span>
+            ))}
+          </p>
         </div>
       </div>
     </div>
