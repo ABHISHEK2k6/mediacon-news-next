@@ -144,8 +144,7 @@ winter feels like a vintage film you didn't know you were starring in.
   },
   {
     id: "me-5",
-    title: `Study Finds 89% of People Are Just Nodding in Zoom Meetings Without Knowing What’s
-    Going On`,
+    title: `Study Finds 89% of People Are Just Nodding in Zoom Meetings Without Knowing..`,
     author: "Anand Gupta",
     date: "Sept 22, 2024",
     image: "/assets/images.png",
@@ -181,7 +180,6 @@ Zoom has not commented, but sources say they're considering a new “Auto-Nod”
   {
     id: "me-6",
     title: `FIFA Confirms New Rule: Matches to Include One "Uno Reverse Card" per Team
-    Starting 2026
     `,
     author: "Raktim Thakur",
     date: "Dec 16, 2023",
@@ -302,8 +300,7 @@ This is innovation at its finest — not just building tech, but changing lives.
   },
   {
     id: "me-10",
-    title: `19-Year-Old Refugee Wins Olympic Gold in 1500m – Dedicates Medal to Displaced
-Athletes Worldwide
+    title: `19-Year-Old Refugee Wins Olympic Gold in 1500m
 `,
     author: "Rishi Yadav",
     date: "June 20, 2024",
@@ -422,8 +419,7 @@ This is innovation at its finest — not just building tech, but changing lives.
   },
   {
     id: "us-4",
-    title: `19-Year-Old Refugee Wins Olympic Gold in 1500m – Dedicates Medal to Displaced
-Athletes Worldwide
+    title: `19-Year-Old Refugee Wins Olympic Gold in 1500m
 `,
     author: "Rishi Yadav",
     date: "June 20, 2024",
