@@ -176,7 +176,7 @@ export default function NewYorkTimesHomepage() {
                   <div className={styles.description}>
                     <div>
                       <Image
-                        src={news.image}
+                        src={news.logo}
                         alt={news.author}
                         width={500}
                         height={500}

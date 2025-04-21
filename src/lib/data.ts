@@ -6,6 +6,7 @@ export const middleEastNews = [
     title:  " Trump to Face Impeachment in 2 Weeks",
     author: "Anjali Sharma",
     date: "Feb 10, 2025",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/Trump.png",
     content: `Washington D.C. — In a bombshell revelation shaking the political corridors of the U.S., an
 anonymous senior official from the White House has reportedly leaked a series of classified
@@ -36,6 +37,7 @@ But if the leaked timeline is accurate, the formal proceedings could begin as ea
     title: `Kerala Government to Cover All Hospital Bills for Citizens Above 50`,
     author: "Prasoon Kumar",
     date: "Apr 09, 2024",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/kerala govt.png",
     content: `Thiruvananthapuram: In a bold move towards inclusive healthcare, the Kerala Government has
 announced a landmark policy to fully cover hospital treatment costs for all residents aged 50
@@ -65,6 +67,7 @@ moment in Kerala’s commitment to dignified, universal healthcare.`
     title: `“Here’s Why Everyone is Freezing Lemons – The Reason is Weirder Than You Think”`,
     author: "Nisha Patel",
     date: "Nov 08, 2023",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/lemon.png",
     content: `In what can only be described as the latest bizarre trend to sweep across social media, thousands
 of people have taken to freezing lemons. Yes, you heard that right – freezing lemons. But why?
@@ -108,6 +111,7 @@ is, well, just a little weirder than you think.`
 Anymore)`,
     author: "Prasad Sharma",
     date: "Jan 24, 2025",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/best places.png",
     content: `Winter’s here, and so is that annual pressure to “make memories” and “see the world” instead of
 just hibernating with hot chocolate and unfinished New Year’s resolutions. So if you're looking
@@ -147,6 +151,7 @@ winter feels like a vintage film you didn't know you were starring in.
     title: `Study Finds 89% of People Are Just Nodding in Zoom Meetings Without Knowing..`,
     author: "Anand Gupta",
     date: "Sept 22, 2024",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/images.png",
     content: `A shocking-but-not-really study released today by the International Institute of Pretending to
 Pay Attention has confirmed what we’ve all suspected: 89% of people in Zoom meetings are
@@ -183,6 +188,7 @@ Zoom has not commented, but sources say they're considering a new “Auto-Nod”
     `,
     author: "Raktim Thakur",
     date: "Dec 16, 2023",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/fifa.png",
     content: `In a surprise press release this morning, FIFA has confirmed a controversial new rule that will
 allow each football team to use one Uno Reverse Card per match starting with the 2026 World
@@ -216,6 +222,7 @@ complete with slow-motion animations and crowd chants yelling “REVERSE!”`
     title: `Prithviraj Attacked at Home and Hospitalized Days After Empuraan Release`,
     author: "Sunisha Rajesh",
     date: "May 11, 2024",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/prtithvi.png",
     content: `Thiruvananthapuram: In a shocking turn of events, Malayalam actor and filmmaker Prithviraj
 Sukumaran was allegedly attacked late last night at his residence, just weeks after the release of
@@ -245,6 +252,7 @@ turn.
     title: "Virat Kohli to Quit Cricket and Join Bollywood? Karan Johar Hints at Major Film Deal",
     author: "Ajith Baldev",
     date: "March 12, 2025",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/virat kohli.png",
     content: `Mumbai: In a jaw-dropping development that’s left cricket fans stunned, rumors are swirling that
 Virat Kohli may be planning a dramatic career shift — from the pitch to the big screen.
@@ -272,6 +280,7 @@ Is the king of the crease ready to rule the silver screen?`
     title: "IIT Students Develop Low-Cost Water Purifier Now Used in 400 Villages",
     author: "Sindhu Shetty",
     date: "April 24, 2024",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/iit.png",
     content: `New Delhi: A group of final-year students from IIT Madras has captured global attention after
 developing an ultra-affordable water purifier that’s now transforming lives in over 400 rural
@@ -304,6 +313,7 @@ This is innovation at its finest — not just building tech, but changing lives.
 `,
     author: "Rishi Yadav",
     date: "June 20, 2024",
+    logo: "/assets/Con(Logo).png",
     image: "/assets/medal 19.png",
     content: `Paris: In what’s being called one of the most emotional moments in Olympic history, Amina
 Khaled, a 19-year-old refugee athlete originally from Syria, clinched gold in the women’s
