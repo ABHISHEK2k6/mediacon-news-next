@@ -20,6 +20,9 @@
   border-top-right-radius: 1.2rem;
   box-shadow: 1px 1px 50rem rgb(0, 0, 0);
 }
+
+
+
 .image{
   display: flex;
   flex-direction: row;
@@ -71,7 +74,7 @@
 }
 
 .button {
-  /* Your existing styles */
+
   position: fixed;
   top: 1.8rem;
   left: 1.3rem;
@@ -91,8 +94,8 @@
   border-radius: 50%;
   cursor: pointer;
   transition: transform 0.2s ease;
-  
-  /* Add these new properties */
+
+
   outline: none;
   -webkit-tap-highlight-color: transparent;
   user-select: none;
@@ -103,7 +106,7 @@
   background-color: rgba(93, 90, 90, 0.9);
 }
 
-/* Remove focus outline for accessibility while keeping it keyboard-accessible */
+
 .button:focus {
   outline: none;
 }
